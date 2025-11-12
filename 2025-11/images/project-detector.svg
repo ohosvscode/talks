@@ -1,0 +1,26 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M71 32.5C71 49.897 56.897 64 39.5 64C22.103 64 8 49.897 8 32.5C8 15.103 22.103 1 39.5 1C56.897 1 71 15.103 71 32.5ZM19.025 32.5C19.025 43.808 28.192 52.975 39.5 52.975C50.808 52.975 59.975 43.808 59.975 32.5C59.975 21.192 50.808 12.025 39.5 12.025C28.192 12.025 19.025 21.192 19.025 32.5Z" fill="black"/>
+<line x1="18" y1="75.5" x2="62" y2="75.5" stroke="#1F6AFF" stroke-width="9"/>
+<line class="search-handle" x1="57.2716" y1="49.9102" x2="74.2716" y2="67.9102" stroke="black" stroke-width="9"/>
+<style>
+    @media (prefers-color-scheme: dark) { 
+        path {
+            fill: #fff;
+            stroke: #000;
+        }
+        .search-handle {
+            stroke: #fff;
+        }
+    }
+
+    html[data-theme="white"] {
+        path {
+            fill: #000 !important;
+            stroke: #fff;
+        }
+        .search-handle {
+            stroke: #000 !important;
+        }
+    }
+</style>
+</svg>
