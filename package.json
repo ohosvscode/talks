@@ -3,7 +3,8 @@
   "packageManager": "pnpm@10.22.0",
   "scripts": {
     "dev:2025-11": "slidev 2025-11/slides.md",
-    "build:2025-11": "slidev build 2025-11/slides.md"
+    "build:2025-11": "slidev build 2025-11/slides.md --out dist/2025-11",
+    "build": "node scripts/build-all.mjs"
   },
   "dependencies": {
     "@slidev/theme-default": "^0.25.0"
