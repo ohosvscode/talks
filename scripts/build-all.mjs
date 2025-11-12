@@ -41,9 +41,13 @@ talkDirs.sort()
 await rm(distRoot, { recursive: true, force: true })
 await mkdir(distRoot, { recursive: true })
 
-for (const talk of talkDirs) {
-  await buildTalk(talk)
-}
+const requested = Number.parseInt(process.env.BUILD_CONCURRENCY ?? '', 10)
+const maxConcurrency = Number.isFinite(requested) && requested > 0 ? requested : Math.min(4, talkDirs.length)
+const queue = [...talkDirs]
+
+await Promise.all(
+  Array.from({ length: Math.min(maxConcurrency, queue.length) }, () => runNext()),
+)
 
 const latest = talkDirs.at(-1)
 const redirectLines = [
@@ -55,6 +59,15 @@ await writeFile(path.join(distRoot, '_redirects'), `${redirectLines.join('\n')}\
 
 console.log('全部演讲构建完成。')
 
+async function runNext() {
+  const talk = queue.shift()
+  if (!talk)
+    return
+
+  await buildTalk(talk)
+  await runNext()
+}
+
 async function buildTalk(talk) {
   console.log(`开始构建 ${talk}…`)
 
@@ -63,7 +76,7 @@ async function buildTalk(talk) {
   const outDir = path.join(distRoot, talk)
 
   await new Promise((resolve, reject) => {
-    const child = spawn('pnpm', ['exec', 'slidev', 'build', `${talk}/slides.md`, '--out', outDir], {
+    const child = spawn('pnpm', ['exec', 'slidev', 'build', `${talk}/slides.md`, '--out', outDir, '--base', './'], {
       cwd: repoRoot,
       stdio: 'inherit',
       shell: process.platform === 'win32',
