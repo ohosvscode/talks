@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "antfu.slidev"
+    "antfu.slidev",
+    "dbaeumer.vscode-eslint"
   ]
 }
