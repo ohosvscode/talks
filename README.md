@@ -6,6 +6,6 @@ This repository contains the talks of Arkcode.
 
 - [2025-11](2025-11)
 
-## License
+## Contributing
 
-MIT
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
