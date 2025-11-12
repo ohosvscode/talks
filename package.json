@@ -1,15 +1,17 @@
 {
   "type": "module",
+  "packageManager": "pnpm@10.22.0",
   "scripts": {
-    "dev": "slidev 2025-11/slides.md",
-    "build": "slidev build 2025-11/slides.md"
+    "dev:2025-11": "slidev 2025-11/slides.md",
+    "build:2025-11": "slidev build 2025-11/slides.md"
   },
   "dependencies": {
     "@slidev/theme-default": "^0.25.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
-    "@slidev/cli": "^52.8.0"
+    "@slidev/cli": "^52.8.0",
+    "pnpm": "^10.22.0"
   },
   "overrides": {
     "vite": "npm@rolldown-vite@latest"
