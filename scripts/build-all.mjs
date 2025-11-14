@@ -76,7 +76,7 @@ async function buildTalk(talk) {
   const outDir = path.join(distRoot, talk)
 
   await new Promise((resolve, reject) => {
-    const child = spawn('pnpm', ['exec', 'slidev', 'build', `${talk}/slides.md`, '--out', outDir, '--base', './'], {
+    const child = spawn('pnpm', ['exec', 'slidev', 'build', `${talk}/slides.md`, '--out', outDir, '--base', `/${talk}/`], {
       cwd: repoRoot,
       stdio: 'inherit',
       shell: process.platform === 'win32',
