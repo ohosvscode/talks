@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "antfu.slidev",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "nuxt.mdc"
   ]
 }
