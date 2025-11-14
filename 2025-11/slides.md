@@ -141,7 +141,7 @@ console.log(myNodejsModule)
 
 ---
 layout: image-right
-image: ./images/deveco-napi.png
+image: ./deveco-napi.png
 ---
 
 # 现在适配遇到了哪些困难？
