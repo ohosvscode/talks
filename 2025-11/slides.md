@@ -3,13 +3,13 @@ theme: ../themes/arkcode
 transition: fade
 mdc: true
 layout: center
-image: ./images/arkcode.png
+image: /images/arkcode.png
 ---
 
 ---
 layout: introduction
 name: 古欢
-avatar: ./images/avatar.png
+avatar: /images/avatar.png
 tags:
   - ["i-carbon-location", "广东，梅州"]
   - ["i-carbon-education", "广州，大三"]
@@ -20,11 +20,11 @@ tags:
 开发了一个 `ArkTS` vscode 插件，为 `vscode` 提供了 `ArkTS` 的语法高亮、代码补全、代码格式化等基础功能。
 
 <div class="flex items-center gap-2">
-  <img src="./images/arkts.png" width="30" />
-  <img src="./images/twoslash.svg" width="30" />
-  <img src="./images/electron.svg" width="30" />
-  <img src="./images/yesplaymusic.png" width="30" />
-  <img src="./images/project-detector.svg" width="30" />
+  <img src="/images/arkts.png" width="30" />
+  <img src="/images/twoslash.svg" width="30" />
+  <img src="/images/electron.svg" width="30" />
+  <img src="/images/yesplaymusic.png" width="30" />
+  <img src="/images/project-detector.svg" width="30" />
 </div>
 
 ---
@@ -37,7 +37,7 @@ layout: statement
 
 ---
 layout: image-right
-image: ./post/about.png
+image: /post/about.png
 backgroundSize: 85%
 ---
 
@@ -53,7 +53,7 @@ backgroundSize: 85%
 
 ---
 layout: image-right
-image: ./post/desktop-search.jpg
+image: /post/desktop-search.jpg
 ---
 
 # 初体验
@@ -97,7 +97,7 @@ layout: quote
   </SectionCard>
 </SectionGrid>
 
-![应用市场](./images/market.png)
+![应用市场](/images/market.png)
 
 ---
 
@@ -114,10 +114,10 @@ layout: quote
 
 <div class="grid grid-cols-2 gap-4 mt-4">
   <div>
-    <img src="./post/app-gallery-deveco-studio.png" class="w-full rounded" />
+    <img src="/post/app-gallery-deveco-studio.png" class="w-full rounded" />
   </div>
   <div>
-    <img src="./post/deveco-studio-create.jpg" class="w-full rounded" />
+    <img src="/post/deveco-studio-create.jpg" class="w-full rounded" />
   </div>
 </div>
 
@@ -129,7 +129,7 @@ layout: quote
 
 <div class="mt-4">
 
-<img src="./post/deveco-studio-running.jpg" class="w-full rounded" />
+<img src="/post/deveco-studio-running.jpg" class="w-full rounded" />
 
 </div>
 
@@ -139,7 +139,7 @@ layout: quote
 
 - 代码补全的补全列表项多了之后，滚动会掉帧，非常卡顿
 
-<video src="./videos/$r-slow.mp4" autoplay loop muted />
+<video src="/videos/$r-slow.mp4" autoplay loop muted />
 
 ---
 
@@ -147,7 +147,7 @@ layout: quote
 
 ## 这是个巨大硬伤！没有日志没法调试=**无用啊**！{class="text-xl!"}
 
-<video src="./videos/no-hilog.mp4" autoplay loop muted mt-4 />
+<video src="/videos/no-hilog.mp4" autoplay loop muted mt-4 />
 
 ---
 
@@ -160,13 +160,13 @@ layout: quote
 
 😮‍💨 现在看来这个 `DevEco Studio Next` 仍然有各种各样的问题，特别是前面提到的几个硬伤，导致这个新IDE其实根本没法正常用，还是任重道远
 
-![DevEco Studio Next 停止运行](./images/deveco-stop.jpg)
+![DevEco Studio Next 停止运行](/images/deveco-stop.jpg)
 
 ---
 layout: full
 ---
 
-<video src="./videos/reference-bug.mp4" controls size-full />
+<video src="/videos/reference-bug.mp4" controls size-full />
 
 ---
 layout: quote
@@ -180,9 +180,9 @@ layout: quote
 
 <div class="mt-4 flex justify-center gap-4">
 
-<img src="./post/deveco-studio-terminal.jpg" class="size-50% rounded" />
+<img src="/post/deveco-studio-terminal.jpg" class="size-50% rounded" />
 
-<img src="./images/git-next.jpg" class="size-50% rounded" />
+<img src="/images/git-next.jpg" class="size-50% rounded" />
 
 </div>
 
@@ -198,7 +198,7 @@ layout: quote
 
 <div class="mt-4 flex justify-center gap-4">
 
-<img src="./images/hishell-git-next.jpg" class="size-100% rounded" />
+<img src="/images/hishell-git-next.jpg" class="size-100% rounded" />
 
 </div>
 ---
@@ -237,7 +237,7 @@ layout: quote
 
 有朝一日能接入，建议接入 `open-vsx`, 它属于 Eclipse 基金会，有社区支持，规避微软的问题
 
-![open-vsx](./images/open-vsx.png)
+![open-vsx](/images/open-vsx.png)
 
 ---
 
@@ -251,7 +251,7 @@ layout: quote
 
 `Cursor`、`Trae` 等海量AI编辑器都接入了 `open-vsx` 插件市场
 
-![open-vsx](./images/open-vsx.png)
+![open-vsx](/images/open-vsx.png)
 
 ---
 
@@ -270,7 +270,7 @@ layout: quote
 - 鸿蒙PC里面，`electron` 的 **`.node` 依赖加载问题**
 </v-click>
 
-![open-vsx](./images/open-vsx.png)
+![open-vsx](/images/open-vsx.png)
 
 ---
 layout: quote
@@ -420,7 +420,7 @@ const projectDetector = require('./project-detector.node')
 
 <div class="mt-4">
 
-<img src="./post/napi-project-structure.png" class="w-full rounded" />
+<img src="/post/napi-project-structure.png" class="w-full rounded" />
 
 </div>
 
@@ -434,7 +434,7 @@ const projectDetector = require('./project-detector.node')
 
 现在已经可以正常移植到鸿蒙PC运行了
 
-<img src="./post/yesplaymusic-home.jpg" class="w-full rounded mt-4" />
+<img src="/post/yesplaymusic-home.jpg" class="w-full rounded mt-4" />
 
 ---
 
@@ -446,7 +446,7 @@ const projectDetector = require('./project-detector.node')
 
 现在帧率目测的话，只有**20-30帧**左右（可能都不到），感觉滚动起来很卡顿
 
-<video src="./videos/yesplaymusic.mp4" autoplay loop muted mt-4 />
+<video src="/videos/yesplaymusic.mp4" autoplay loop muted mt-4 />
 
 ---
 
