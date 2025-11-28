@@ -3,7 +3,7 @@
 
 <template>
   <div flex="~ justify-between">
-    <div class="slidev-layout end [&>h1:first-of-type]:mt-30 [&>h1:first-of-type]:ml-10 [&>h1:first-of-type]:font-500 [&>h1:first-of-type]:text-6xl [&>h1:first-of-type]">
+    <div class="slidev-layout end [&>h1:first-of-type]:mt-30 ml-10 [&>h1:first-of-type]:font-500 [&>h1:first-of-type]:text-6xl">
       <slot />
     </div>
     <img pointer-events-none src="../images/logo.png" class="animate-rotate-360 op-5 size-200 fixed right--90 bottom--90">

@@ -74,3 +74,19 @@
     @apply text-6xl font-500 leading-20;
   }
 }
+
+@keyframes rotate-in-360 {
+  from {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 30, 0deg);
+  }
+  to {
+    transform-origin: center;
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+.animate-rotate-360 {
+  animation: rotate-in-360 linear 300s infinite;
+  transform-origin: center;
+}
