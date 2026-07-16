@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.34.5",
   "scripts": {
     "build": "node scripts/build-all.mjs"
   },
